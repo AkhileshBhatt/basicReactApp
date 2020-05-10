@@ -28,7 +28,7 @@ class Form extends React.Component {
     if (name && job) {
       // checking whether there is data in name and job?
       // calling Grand Parent(App.js) function to change it's state: which will reflec change in App and Table
-      addCharacter(this.state);
+      addCharacter(this.state, 'add');
       this.resetData();
     } else {
       this.setState({
